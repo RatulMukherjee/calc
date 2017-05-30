@@ -1,14 +1,25 @@
 <html>
-<head></head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="$1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    
+    
+    
+</head>
 <body>
-<h3 ><center>Simple Calculator</center></h3>
-<br/>
+
 <style>
-#calc{width:300px;height:250px;}
-#btn{width:100%;height:40px;font-size:20px;}
+
+
 </style>
-<form Name="calc">
-<table id="calc" border=2 style="margin-left: 39%;">
+<form Name="calc" style="width:300px;height:250px; margin-left: 2%; margin-top: 3%;">
+    <div class = "table-responsive">
+<table id="calc" border=1 class="table-bordered" >
 <tr>
 <td colspan=6><input id="btn" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"></td>
 <td style="display:none"><input name="M" type="number"></td>
@@ -57,7 +68,9 @@ OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(
 <td><input id="btn" type=button value="√" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
 <td><input id="btn" type=button value="C" OnClick="calc.display.value=''"></td>
 </tr>
+
 </table>
+</div>
 </form>
 </body>
 </html>
